@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788097529EB7CD90035FF9D /* TangraMindsApp.swift */; };
+		6788097829EB7CD90035FF9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788097729EB7CD90035FF9D /* ContentView.swift */; };
+		6788097A29EB7CDA0035FF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6788097929EB7CDA0035FF9D /* Assets.xcassets */; };
+		6788097D29EB7CDA0035FF9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6788097C29EB7CDA0035FF9D /* Preview Assets.xcassets */; };
+		6788098729EB7CDA0035FF9D /* TangraMindsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788098629EB7CDA0035FF9D /* TangraMindsTests.swift */; };
+		6788099129EB7CDA0035FF9D /* TangraMindsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788099029EB7CDA0035FF9D /* TangraMindsUITests.swift */; };
+		6788099329EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6788098329EB7CDA0035FF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6788096A29EB7CD90035FF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6788097129EB7CD90035FF9D;
+			remoteInfo = TangraMinds;
+		};
+		6788098D29EB7CDA0035FF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6788096A29EB7CD90035FF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6788097129EB7CD90035FF9D;
+			remoteInfo = TangraMinds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6788097229EB7CD90035FF9D /* TangraMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TangraMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788097529EB7CD90035FF9D /* TangraMindsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsApp.swift; sourceTree = "<group>"; };
+		6788097729EB7CD90035FF9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6788097929EB7CDA0035FF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6788097C29EB7CDA0035FF9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6788098229EB7CDA0035FF9D /* TangraMindsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TangraMindsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788098629EB7CDA0035FF9D /* TangraMindsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsTests.swift; sourceTree = "<group>"; };
+		6788098C29EB7CDA0035FF9D /* TangraMindsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TangraMindsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788099029EB7CDA0035FF9D /* TangraMindsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsUITests.swift; sourceTree = "<group>"; };
+		6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6788096F29EB7CD90035FF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788097F29EB7CDA0035FF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788098929EB7CDA0035FF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6788096929EB7CD90035FF9D = {
+			isa = PBXGroup;
+			children = (
+				6788097429EB7CD90035FF9D /* TangraMinds */,
+				6788098529EB7CDA0035FF9D /* TangraMindsTests */,
+				6788098F29EB7CDA0035FF9D /* TangraMindsUITests */,
+				6788097329EB7CD90035FF9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6788097329EB7CD90035FF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6788097229EB7CD90035FF9D /* TangraMinds.app */,
+				6788098229EB7CDA0035FF9D /* TangraMindsTests.xctest */,
+				6788098C29EB7CDA0035FF9D /* TangraMindsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6788097429EB7CD90035FF9D /* TangraMinds */ = {
+			isa = PBXGroup;
+			children = (
+				6788097529EB7CD90035FF9D /* TangraMindsApp.swift */,
+				6788097729EB7CD90035FF9D /* ContentView.swift */,
+				6788097929EB7CDA0035FF9D /* Assets.xcassets */,
+				6788097B29EB7CDA0035FF9D /* Preview Content */,
+			);
+			path = TangraMinds;
+			sourceTree = "<group>";
+		};
+		6788097B29EB7CDA0035FF9D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6788097C29EB7CDA0035FF9D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6788098529EB7CDA0035FF9D /* TangraMindsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6788098629EB7CDA0035FF9D /* TangraMindsTests.swift */,
+			);
+			path = TangraMindsTests;
+			sourceTree = "<group>";
+		};
+		6788098F29EB7CDA0035FF9D /* TangraMindsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6788099029EB7CDA0035FF9D /* TangraMindsUITests.swift */,
+				6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */,
+			);
+			path = TangraMindsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6788097129EB7CD90035FF9D /* TangraMinds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6788099629EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMinds" */;
+			buildPhases = (
+				6788096E29EB7CD90035FF9D /* Sources */,
+				6788096F29EB7CD90035FF9D /* Frameworks */,
+				6788097029EB7CD90035FF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TangraMinds;
+			productName = TangraMinds;
+			productReference = 6788097229EB7CD90035FF9D /* TangraMinds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6788098129EB7CDA0035FF9D /* TangraMindsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6788099929EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMindsTests" */;
+			buildPhases = (
+				6788097E29EB7CDA0035FF9D /* Sources */,
+				6788097F29EB7CDA0035FF9D /* Frameworks */,
+				6788098029EB7CDA0035FF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6788098429EB7CDA0035FF9D /* PBXTargetDependency */,
+			);
+			name = TangraMindsTests;
+			productName = TangraMindsTests;
+			productReference = 6788098229EB7CDA0035FF9D /* TangraMindsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6788098B29EB7CDA0035FF9D /* TangraMindsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6788099C29EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMindsUITests" */;
+			buildPhases = (
+				6788098829EB7CDA0035FF9D /* Sources */,
+				6788098929EB7CDA0035FF9D /* Frameworks */,
+				6788098A29EB7CDA0035FF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6788098E29EB7CDA0035FF9D /* PBXTargetDependency */,
+			);
+			name = TangraMindsUITests;
+			productName = TangraMindsUITests;
+			productReference = 6788098C29EB7CDA0035FF9D /* TangraMindsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6788096A29EB7CD90035FF9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6788097129EB7CD90035FF9D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					6788098129EB7CDA0035FF9D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6788097129EB7CD90035FF9D;
+					};
+					6788098B29EB7CDA0035FF9D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6788097129EB7CD90035FF9D;
+					};
+				};
+			};
+			buildConfigurationList = 6788096D29EB7CD90035FF9D /* Build configuration list for PBXProject "TangraMinds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6788096929EB7CD90035FF9D;
+			productRefGroup = 6788097329EB7CD90035FF9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6788097129EB7CD90035FF9D /* TangraMinds */,
+				6788098129EB7CDA0035FF9D /* TangraMindsTests */,
+				6788098B29EB7CDA0035FF9D /* TangraMindsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6788097029EB7CD90035FF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6788097D29EB7CDA0035FF9D /* Preview Assets.xcassets in Resources */,
+				6788097A29EB7CDA0035FF9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788098029EB7CDA0035FF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788098A29EB7CDA0035FF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6788096E29EB7CD90035FF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6788097829EB7CD90035FF9D /* ContentView.swift in Sources */,
+				6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788097E29EB7CDA0035FF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6788098729EB7CDA0035FF9D /* TangraMindsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6788098829EB7CDA0035FF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6788099129EB7CDA0035FF9D /* TangraMindsUITests.swift in Sources */,
+				6788099329EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6788098429EB7CDA0035FF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6788097129EB7CD90035FF9D /* TangraMinds */;
+			targetProxy = 6788098329EB7CDA0035FF9D /* PBXContainerItemProxy */;
+		};
+		6788098E29EB7CDA0035FF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6788097129EB7CD90035FF9D /* TangraMinds */;
+			targetProxy = 6788098D29EB7CDA0035FF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6788099429EB7CDA0035FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6788099529EB7CDA0035FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6788099729EB7CDA0035FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TangraMinds/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMinds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6788099829EB7CDA0035FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TangraMinds/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMinds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6788099A29EB7CDA0035FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMindsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TangraMinds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TangraMinds";
+			};
+			name = Debug;
+		};
+		6788099B29EB7CDA0035FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMindsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TangraMinds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TangraMinds";
+			};
+			name = Release;
+		};
+		6788099D29EB7CDA0035FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMindsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TangraMinds;
+			};
+			name = Debug;
+		};
+		6788099E29EB7CDA0035FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HWSW515.TangraMindsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TangraMinds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6788096D29EB7CD90035FF9D /* Build configuration list for PBXProject "TangraMinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6788099429EB7CDA0035FF9D /* Debug */,
+				6788099529EB7CDA0035FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6788099629EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6788099729EB7CDA0035FF9D /* Debug */,
+				6788099829EB7CDA0035FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6788099929EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMindsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6788099A29EB7CDA0035FF9D /* Debug */,
+				6788099B29EB7CDA0035FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6788099C29EB7CDA0035FF9D /* Build configuration list for PBXNativeTarget "TangraMindsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6788099D29EB7CDA0035FF9D /* Debug */,
+				6788099E29EB7CDA0035FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6788096A29EB7CD90035FF9D /* Project object */;
+}
