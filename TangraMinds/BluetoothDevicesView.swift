@@ -50,6 +50,7 @@ struct DeviceRow: View {
     }
 }
 
+// Bluetooth Preview
 struct BluetoothDevicesView_Previews: PreviewProvider {
     static var previews: some View {
         BluetoothDevicesView(bluetoothManager: BluetoothManager())

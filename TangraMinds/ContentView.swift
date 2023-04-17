@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var isBluetoothDevicesViewPresented = false
     @State private var isResultViewPresented: Bool = false
     @State private var toastMessage: String?
+    @State private var isBoardViewPresented = false
 
     var body: some View {
         VStack(spacing: 20) {
@@ -60,6 +61,19 @@ struct ContentView: View {
             .sheet(isPresented: $isResultViewPresented) {
                 ResultView(bluetoothManager: bluetoothManager)
             }
+            Button(action: {
+                isBoardViewPresented = true
+            }) {
+                Text("Board")
+                    .font(.title)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .sheet(isPresented: $isBoardViewPresented) {
+                BoardView(bluetoothManager: bluetoothManager)
+            }
 
             
         }
@@ -97,6 +111,7 @@ class BluetoothManager: NSObject, ObservableObject, CBCentralManagerDelegate, CB
     
     @Published var toastMessage: String?
     @Published var receivedDataCount: Int = 0
+    @Published var savedPhotos: [UIImage] = []
 
 
 

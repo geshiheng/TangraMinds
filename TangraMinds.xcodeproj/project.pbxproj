@@ -18,6 +18,9 @@
 		678809A229EB9F200035FF9D /* BluetoothDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */; };
 		678809A429EC26F80035FF9D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A329EC26F80035FF9D /* ResultView.swift */; };
 		678809A629ECB3DA0035FF9D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A529ECB3DA0035FF9D /* Toast.swift */; };
+		67D9973529FFC33B00B36086 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973429FFC33B00B36086 /* BoardView.swift */; };
+		67D9973729FFC73100B36086 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973629FFC73100B36086 /* GalleryView.swift */; };
+		67D9973929FFCA1300B36086 /* PhotoLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevicesView.swift; sourceTree = "<group>"; };
 		678809A329EC26F80035FF9D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		678809A529ECB3DA0035FF9D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		67D9973429FFC33B00B36086 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		67D9973629FFC73100B36086 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */,
 				678809A329EC26F80035FF9D /* ResultView.swift */,
 				678809A529ECB3DA0035FF9D /* Toast.swift */,
+				67D9973429FFC33B00B36086 /* BoardView.swift */,
+				67D9973629FFC73100B36086 /* GalleryView.swift */,
+				67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */,
 				6788097929EB7CDA0035FF9D /* Assets.xcassets */,
 				6788097B29EB7CDA0035FF9D /* Preview Content */,
 			);
@@ -269,12 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D9973529FFC33B00B36086 /* BoardView.swift in Sources */,
 				678809A029EB81370035FF9D /* CameraView.swift in Sources */,
 				678809A229EB9F200035FF9D /* BluetoothDevicesView.swift in Sources */,
 				678809A429EC26F80035FF9D /* ResultView.swift in Sources */,
 				6788097829EB7CD90035FF9D /* ContentView.swift in Sources */,
 				678809A629ECB3DA0035FF9D /* Toast.swift in Sources */,
+				67D9973929FFCA1300B36086 /* PhotoLibraryView.swift in Sources */,
 				6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */,
+				67D9973729FFC73100B36086 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +452,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to save captured images.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Requesting access to your photo library to display saved images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +486,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to save captured images.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Requesting access to your photo library to display saved images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
