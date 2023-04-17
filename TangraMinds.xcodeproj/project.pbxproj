@@ -14,6 +14,10 @@
 		6788098729EB7CDA0035FF9D /* TangraMindsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788098629EB7CDA0035FF9D /* TangraMindsTests.swift */; };
 		6788099129EB7CDA0035FF9D /* TangraMindsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788099029EB7CDA0035FF9D /* TangraMindsUITests.swift */; };
 		6788099329EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */; };
+		678809A029EB81370035FF9D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788099F29EB81370035FF9D /* CameraView.swift */; };
+		678809A229EB9F200035FF9D /* BluetoothDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */; };
+		678809A429EC26F80035FF9D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A329EC26F80035FF9D /* ResultView.swift */; };
+		678809A629ECB3DA0035FF9D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678809A529ECB3DA0035FF9D /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		6788098C29EB7CDA0035FF9D /* TangraMindsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TangraMindsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6788099029EB7CDA0035FF9D /* TangraMindsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsUITests.swift; sourceTree = "<group>"; };
 		6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6788099F29EB81370035FF9D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevicesView.swift; sourceTree = "<group>"; };
+		678809A329EC26F80035FF9D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		678809A529ECB3DA0035FF9D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			children = (
 				6788097529EB7CD90035FF9D /* TangraMindsApp.swift */,
 				6788097729EB7CD90035FF9D /* ContentView.swift */,
+				6788099F29EB81370035FF9D /* CameraView.swift */,
+				678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */,
+				678809A329EC26F80035FF9D /* ResultView.swift */,
+				678809A529ECB3DA0035FF9D /* Toast.swift */,
 				6788097929EB7CDA0035FF9D /* Assets.xcassets */,
 				6788097B29EB7CDA0035FF9D /* Preview Content */,
 			);
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678809A029EB81370035FF9D /* CameraView.swift in Sources */,
+				678809A229EB9F200035FF9D /* BluetoothDevicesView.swift in Sources */,
+				678809A429EC26F80035FF9D /* ResultView.swift in Sources */,
 				6788097829EB7CD90035FF9D /* ContentView.swift in Sources */,
+				678809A629ECB3DA0035FF9D /* Toast.swift in Sources */,
 				6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,8 +433,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TangraMinds/Preview Content\"";
+				DEVELOPMENT_TEAM = JHPUVPP28Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This key is required if your app uses the device’s Bluetooth interface.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to save captured images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +466,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TangraMinds/Preview Content\"";
+				DEVELOPMENT_TEAM = JHPUVPP28Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This key is required if your app uses the device’s Bluetooth interface.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to save captured images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
