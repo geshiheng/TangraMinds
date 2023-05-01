@@ -33,6 +33,7 @@ struct ContentView: View {
                 CameraView()
             }
 
+            
             Button(action: {
                 bluetoothManager.initializeCentralManager()
                 isBluetoothDevicesViewPresented = true
