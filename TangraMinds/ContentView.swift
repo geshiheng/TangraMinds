@@ -17,6 +17,7 @@ struct ContentView: View {
     @State private var toastMessage: String?
     @State private var isBoardViewPresented = false
 
+    
     var body: some View {
         VStack(spacing: 20) {
             Button(action: {
