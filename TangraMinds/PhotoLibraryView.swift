@@ -8,67 +8,267 @@
 import SwiftUI
 import Photos
 
+//struct PhotoLibraryView: View {
+//    @State private var images: [UIImage] = []
+//
+//    var body: some View {
+//        VStack {
+//            Text("Photo Library")
+//                .font(.largeTitle)
+//                .padding()
+//
+//            ScrollView {
+//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+//                    ForEach(images, id: \.self) { image in
+//                        Image(uiImage: image)
+//                            .resizable()
+//                            .scaledToFit()
+//                    }
+//                }
+//                .padding()
+//            }
+//        }
+//        .onAppear(perform: loadImages)
+//    }
+//
+//    func loadImages() {
+//        requestPhotoLibraryAuthorization { authorized in
+//            if authorized {
+//                let fetchOptions = PHFetchOptions()
+//                fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+//
+//                let assets = PHAsset.fetchAssets(with: .image, options: fetchOptions)
+//
+//                DispatchQueue.global(qos: .userInitiated).async {
+//                    let imageManager = PHImageManager.default()
+//                    let requestOptions = PHImageRequestOptions()
+//                    requestOptions.isSynchronous = true
+//
+//                    assets.enumerateObjects { asset, _, _ in
+//                        imageManager.requestImage(for: asset, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: requestOptions) { image, _ in
+//                            if let image = image {
+//                                DispatchQueue.main.async {
+//                                    images.append(image)
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//    func requestPhotoLibraryAuthorization(completion: @escaping (Bool) -> Void) {
+//        PHPhotoLibrary.requestAuthorization { status in
+//            DispatchQueue.main.async {
+//                completion(status == .authorized)
+//            }
+//        }
+//    }
+//}
+//
+//struct PhotoLibraryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PhotoLibraryView()
+//    }
+//}
+
+//import SwiftUI
+//
+//struct PhotoLibraryView: View {
+//    @StateObject private var viewModel: PhotoLibraryViewModel
+//
+//    init(databaseManager: DatabaseManager) {
+//        _viewModel = StateObject(wrappedValue: PhotoLibraryViewModel(databaseManager: databaseManager))
+//    }
+//
+//    var body: some View {
+//        ScrollView {
+//            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+//                ForEach(viewModel.photos, id: \.self) { photo in
+//                    Image(uiImage: photo)
+//                        .resizable()
+//                        .scaledToFit()
+//                        .cornerRadius(10)
+//                }
+//            }
+//            .padding()
+//        }
+//        .navigationTitle("Photo Library")
+//    }
+//}
+//
+//struct PhotoLibraryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        // Replace with your actual DatabaseManager instance
+//        let databaseManager = DatabaseManager()
+//        PhotoLibraryView(databaseManager: databaseManager)
+//    }
+//}
+
+
+
+
+
+//import SwiftUI
+//
+//struct PhotoLibraryView: View {
+//    @Environment(\.presentationMode) var presentationMode
+//    @StateObject private var viewModel: PhotoLibraryViewModel
+//    let databaseManager: DatabaseManager
+//    let tangramClassifier: TangramClassifier
+//
+//    @Binding var isClassificationButtonEnabled: Bool
+//
+//    init(databaseManager: DatabaseManager, tangramClassifier: TangramClassifier, isClassificationButtonEnabled: Binding<Bool>) {
+//        self.databaseManager = databaseManager
+//        self.tangramClassifier = tangramClassifier
+//        _viewModel = StateObject(wrappedValue: PhotoLibraryViewModel(databaseManager: databaseManager))
+//        _isClassificationButtonEnabled = isClassificationButtonEnabled
+//    }
+//
+//    var body: some View {
+//        VStack {
+//            if viewModel.photos.isEmpty {
+//                Text("No photos in library")
+//                    .font(.title)
+//            } else {
+//                ScrollView {
+//                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+//                        ForEach(viewModel.photos, id: \.self) { photo in
+//                            Image(uiImage: photo)
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(maxWidth: .infinity)
+//                                .padding()
+//                                .overlay(
+//                                    RoundedRectangle(cornerRadius: 10)
+//                                        .stroke(viewModel.selectedPhoto == photo ? Color.blue : Color.clear, lineWidth: 4)
+//                                )
+//                                .onTapGesture {
+//                                    viewModel.selectedPhoto = photo
+//                                    isClassificationButtonEnabled = viewModel.selectedPhoto != nil
+//                                }
+//                        }
+//                    }
+//                    .padding()
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//struct PhotoLibraryView_Previews: PreviewProvider {
+//    @State static var isClassificationButtonEnabled = false
+//
+//    static var previews: some View {
+//        if let tangramClassifier = TangramClassifier() {
+//            PhotoLibraryView(databaseManager: DatabaseManager(), tangramClassifier: tangramClassifier, isClassificationButtonEnabled: $isClassificationButtonEnabled)
+//        } else {
+//            Text("Tangram Classifier not available")
+//        }
+//    }
+//}
+
+
+
+import SwiftUI
+
 struct PhotoLibraryView: View {
-    @State private var images: [UIImage] = []
+    @Environment(\.presentationMode) var presentationMode
+    @StateObject private var viewModel: PhotoLibraryViewModel
+    let databaseManager: DatabaseManager
+    let tangramClassifier: TangramClassifier
+
+    @State private var classificationResult: String?
+
+    init(databaseManager: DatabaseManager, tangramClassifier: TangramClassifier) {
+        self.databaseManager = databaseManager
+        self.tangramClassifier = tangramClassifier
+        _viewModel = StateObject(wrappedValue: PhotoLibraryViewModel(databaseManager: databaseManager))
+    }
 
     var body: some View {
         VStack {
-            Text("Photo Library")
-                .font(.largeTitle)
-                .padding()
-
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                    ForEach(images, id: \.self) { image in
-                        Image(uiImage: image)
-                            .resizable()
-                            .scaledToFit()
-                    }
-                }
-                .padding()
-            }
-        }
-        .onAppear(perform: loadImages)
-    }
-
-    func loadImages() {
-        requestPhotoLibraryAuthorization { authorized in
-            if authorized {
-                let fetchOptions = PHFetchOptions()
-                fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-
-                let assets = PHAsset.fetchAssets(with: .image, options: fetchOptions)
-
-                DispatchQueue.global(qos: .userInitiated).async {
-                    let imageManager = PHImageManager.default()
-                    let requestOptions = PHImageRequestOptions()
-                    requestOptions.isSynchronous = true
-
-                    assets.enumerateObjects { asset, _, _ in
-                        imageManager.requestImage(for: asset, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: requestOptions) { image, _ in
-                            if let image = image {
-                                DispatchQueue.main.async {
-                                    images.append(image)
+            if viewModel.photos.isEmpty {
+                Text("No photos in library")
+                    .font(.title)
+            } else {
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                        ForEach(viewModel.photos, id: \.self) { photo in
+                            Image(uiImage: photo)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(viewModel.selectedPhoto == photo ? Color.blue : Color.clear, lineWidth: 4)
+                                )
+                                .onTapGesture {
+                                    viewModel.selectedPhoto = photo
                                 }
-                            }
                         }
                     }
+                    .padding()
                 }
+            }
+
+            Button(action: classifyImage) {
+                Text("Classify")
+                    .font(.title)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .disabled(viewModel.selectedPhoto == nil)
+            
+            Button(action: deleteAllPhotos) {
+                Text("Delete All Photos")
+                    .font(.title)
+                    .padding()
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .disabled(viewModel.photos.isEmpty)
+
+
+            if let classification = classificationResult {
+                Text("Classification: \(classification)")
+                    .font(.title2)
+                    .padding()
             }
         }
     }
 
-    func requestPhotoLibraryAuthorization(completion: @escaping (Bool) -> Void) {
-        PHPhotoLibrary.requestAuthorization { status in
-            DispatchQueue.main.async {
-                completion(status == .authorized)
+    private func classifyImage() {
+        guard let selectedPhoto = viewModel.selectedPhoto else {
+            return
+        }
+
+        tangramClassifier.classify(image: selectedPhoto) { result in
+            switch result {
+            case .success(let classification):
+                classificationResult = classification
+                print("Classification: \(classification)")
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
             }
         }
     }
+    private func deleteAllPhotos() {
+        databaseManager.deleteAllPhotos()
+        viewModel.photos = databaseManager.retrievePhotos()
+    }
+
 }
 
 struct PhotoLibraryView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoLibraryView()
+        PhotoLibraryView(databaseManager: DatabaseManager(), tangramClassifier: TangramClassifier())
     }
 }
+

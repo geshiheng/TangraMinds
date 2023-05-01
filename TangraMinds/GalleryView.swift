@@ -11,6 +11,10 @@ import SwiftUI
 struct GalleryView: View {
     @State private var isCameraViewPresented = false
     @State private var isPhotoLibraryViewPresented = false
+    @StateObject private var databaseManager = DatabaseManagerWrapper.shared.databaseManager!
+    @State private var tangramClassifier = TangramClassifier()
+    
+    @State private var isClassificationButtonEnabled = false
 
     var body: some View {
         VStack {
@@ -28,7 +32,7 @@ struct GalleryView: View {
                     .foregroundColor(.blue)
             }
             .sheet(isPresented: $isCameraViewPresented) {
-                CameraView()
+                CameraView(databaseManager: databaseManager)
             }
 
             Button(action: {
@@ -42,8 +46,10 @@ struct GalleryView: View {
                     .cornerRadius(10)
             }
             .sheet(isPresented: $isPhotoLibraryViewPresented) {
-                PhotoLibraryView()
+                PhotoLibraryView(databaseManager: databaseManager, tangramClassifier: tangramClassifier)
             }
+
+
         }
     }
 }
@@ -53,3 +59,7 @@ struct GalleryView_Previews: PreviewProvider {
         GalleryView()
     }
 }
+
+
+
+

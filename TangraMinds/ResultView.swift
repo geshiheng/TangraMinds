@@ -62,21 +62,76 @@
 //}
 // ResultView.swift
 // ResultView.swift
+//import SwiftUI
+//
+//struct ResultView: View {
+//    @ObservedObject var bluetoothManager: BluetoothManager
+//    @State private var selectedImage: String?
+//    @State private var isGalleryViewPresented = false
+//
+//    let images: [String] = ["fish", "ferry", "hill", "tree"]
+//
+//    var body: some View {
+//        VStack {
+//            ScrollView {
+//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+//                    ForEach(images, id: \.self) { image in
+//                        Image(image)
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(maxWidth: .infinity)
+//                            .padding()
+//                            .overlay(
+//                                RoundedRectangle(cornerRadius: 10)
+//                                    .stroke(selectedImage == image ? Color.blue : Color.clear, lineWidth: 4)
+//                            )
+//                            .onTapGesture {
+//                                if selectedImage == image {
+//                                    selectedImage = nil
+//                                } else {
+//                                    selectedImage = image
+//                                }
+//                            }
+//                    }
+//                }
+//                .padding()
+//            }
+//            Button(action: {
+//                isGalleryViewPresented = true
+//            }) {
+//                Text("Done")
+//                    .font(.title)
+//                    .padding()
+//                    .background(Color.blue)
+//                    .foregroundColor(.white)
+//                    .cornerRadius(10)
+//            }
+//            .disabled(selectedImage == nil)
+//            .sheet(isPresented: $isGalleryViewPresented) {
+//                GalleryView()
+//            }
+//        }
+//    }
+//}
+//
+//struct ResultView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ResultView(bluetoothManager: BluetoothManager())
+//    }
+//}
 import SwiftUI
 
 struct ResultView: View {
     @ObservedObject var bluetoothManager: BluetoothManager
-    @State private var selectedImage: String?
+    @State private var selectedImage: UIImage?
     @State private var isGalleryViewPresented = false
-
-    let images: [String] = ["fish", "ferry", "hill", "tree"]
 
     var body: some View {
         VStack {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                    ForEach(images, id: \.self) { image in
-                        Image(image)
+                    ForEach(bluetoothManager.savedPhotos, id: \.self) { image in
+                        Image(uiImage: image)
                             .resizable()
                             .scaledToFit()
                             .frame(maxWidth: .infinity)
@@ -98,6 +153,7 @@ struct ResultView: View {
             }
             Button(action: {
                 isGalleryViewPresented = true
+                clearImages()
             }) {
                 Text("Done")
                     .font(.title)
@@ -111,6 +167,10 @@ struct ResultView: View {
                 GalleryView()
             }
         }
+    }
+
+    func clearImages() {
+        bluetoothManager.savedPhotos = []
     }
 }
 

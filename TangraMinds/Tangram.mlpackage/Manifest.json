@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "0C43F27D-6C4F-4DEF-A16F-B91B88EEA68C": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "15CF9627-3B74-45EA-B7D0-050AC7FA2D6B": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "Tangram.mlmodel",
+            "path": "com.apple.CoreML/Tangram.mlmodel"
+        },
+        "DBAD49EF-AAF0-44A3-A274-362808FE6B46": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "15CF9627-3B74-45EA-B7D0-050AC7FA2D6B"
+}

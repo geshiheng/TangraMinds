@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6762F4F22A0727C10029BFA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762F4F12A0727C10029BFA6 /* Extensions.swift */; };
+		6762F4F52A07CB890029BFA6 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6762F4F42A07CB890029BFA6 /* SQLite */; };
+		6762F4F72A07CC540029BFA6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762F4F62A07CC540029BFA6 /* DatabaseManager.swift */; };
+		6762F4F92A07D1050029BFA6 /* PhotoLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762F4F82A07D1050029BFA6 /* PhotoLibraryViewModel.swift */; };
+		6762F4FB2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762F4FA2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift */; };
+		6762F4FE2A09220D0029BFA6 /* TangramClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762F4FD2A09220D0029BFA6 /* TangramClassifier.swift */; };
+		6762F5122A0971190029BFA6 /* Tangram.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 6762F5112A0971190029BFA6 /* Tangram.mlpackage */; };
 		6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788097529EB7CD90035FF9D /* TangraMindsApp.swift */; };
 		6788097829EB7CD90035FF9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788097729EB7CD90035FF9D /* ContentView.swift */; };
 		6788097A29EB7CDA0035FF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6788097929EB7CDA0035FF9D /* Assets.xcassets */; };
@@ -41,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6762F4F12A0727C10029BFA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6762F4F62A07CC540029BFA6 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		6762F4F82A07D1050029BFA6 /* PhotoLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewModel.swift; sourceTree = "<group>"; };
+		6762F4FA2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerWrapper.swift; sourceTree = "<group>"; };
+		6762F4FC2A07EDF10029BFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6762F4FD2A09220D0029BFA6 /* TangramClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangramClassifier.swift; sourceTree = "<group>"; };
+		6762F5112A0971190029BFA6 /* Tangram.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Tangram.mlpackage; sourceTree = "<group>"; };
 		6788097229EB7CD90035FF9D /* TangraMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TangraMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6788097529EB7CD90035FF9D /* TangraMindsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangraMindsApp.swift; sourceTree = "<group>"; };
 		6788097729EB7CD90035FF9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6762F4F52A07CB890029BFA6 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +123,22 @@
 		6788097429EB7CD90035FF9D /* TangraMinds */ = {
 			isa = PBXGroup;
 			children = (
+				6762F4FC2A07EDF10029BFA6 /* Info.plist */,
 				6788097529EB7CD90035FF9D /* TangraMindsApp.swift */,
 				6788097729EB7CD90035FF9D /* ContentView.swift */,
 				6788099F29EB81370035FF9D /* CameraView.swift */,
 				678809A129EB9F200035FF9D /* BluetoothDevicesView.swift */,
 				678809A329EC26F80035FF9D /* ResultView.swift */,
-				678809A529ECB3DA0035FF9D /* Toast.swift */,
 				67D9973429FFC33B00B36086 /* BoardView.swift */,
 				67D9973629FFC73100B36086 /* GalleryView.swift */,
 				67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */,
+				678809A529ECB3DA0035FF9D /* Toast.swift */,
+				6762F4F12A0727C10029BFA6 /* Extensions.swift */,
+				6762F4F62A07CC540029BFA6 /* DatabaseManager.swift */,
+				6762F4F82A07D1050029BFA6 /* PhotoLibraryViewModel.swift */,
+				6762F4FA2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift */,
+				6762F5112A0971190029BFA6 /* Tangram.mlpackage */,
+				6762F4FD2A09220D0029BFA6 /* TangramClassifier.swift */,
 				6788097929EB7CDA0035FF9D /* Assets.xcassets */,
 				6788097B29EB7CDA0035FF9D /* Preview Content */,
 			);
@@ -164,6 +186,9 @@
 			dependencies = (
 			);
 			name = TangraMinds;
+			packageProductDependencies = (
+				6762F4F42A07CB890029BFA6 /* SQLite */,
+			);
 			productName = TangraMinds;
 			productReference = 6788097229EB7CD90035FF9D /* TangraMinds.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 6788096929EB7CD90035FF9D;
+			packageReferences = (
+				6762F4F32A07CB890029BFA6 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 6788097329EB7CD90035FF9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,14 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6762F4FB2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift in Sources */,
 				67D9973529FFC33B00B36086 /* BoardView.swift in Sources */,
+				6762F4F72A07CC540029BFA6 /* DatabaseManager.swift in Sources */,
 				678809A029EB81370035FF9D /* CameraView.swift in Sources */,
 				678809A229EB9F200035FF9D /* BluetoothDevicesView.swift in Sources */,
 				678809A429EC26F80035FF9D /* ResultView.swift in Sources */,
 				6788097829EB7CD90035FF9D /* ContentView.swift in Sources */,
+				6762F4F22A0727C10029BFA6 /* Extensions.swift in Sources */,
 				678809A629ECB3DA0035FF9D /* Toast.swift in Sources */,
 				67D9973929FFCA1300B36086 /* PhotoLibraryView.swift in Sources */,
+				6762F4F92A07D1050029BFA6 /* PhotoLibraryViewModel.swift in Sources */,
+				6762F4FE2A09220D0029BFA6 /* TangramClassifier.swift in Sources */,
 				6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */,
+				6762F5122A0971190029BFA6 /* Tangram.mlpackage in Sources */,
 				67D9973729FFC73100B36086 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +482,7 @@
 				DEVELOPMENT_TEAM = JHPUVPP28Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TangraMinds/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This key is required if your app uses the device’s Bluetooth interface.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
@@ -482,6 +517,7 @@
 				DEVELOPMENT_TEAM = JHPUVPP28Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TangraMinds/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This key is required if your app uses the device’s Bluetooth interface.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "此应用需要访问您的蓝牙以连接到附近的设备";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This key is required if your app uses APIs that access the device’s camera.";
@@ -617,6 +653,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6762F4F32A07CB890029BFA6 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6762F4F42A07CB890029BFA6 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6762F4F32A07CB890029BFA6 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6788096A29EB7CD90035FF9D /* Project object */;
 }

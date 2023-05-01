@@ -2,51 +2,105 @@
 import SwiftUI
 
 struct BoardView: View {
-    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var bluetoothManager: BluetoothManager
-    @State private var isResultViewPresented = false
 
-    let imageMapping: [String: String] = [
-        "3034413745454231373030303030": "fish",
-        "3034413845454231373030303030": "ferry",
-        "3034414245454231373030303030": "hill",
-        "3034413945454231373030303030": "tree",
-        "3034414345454231373030303030": "image5",
-        "3034414445454231373030303030": "image6",
-        "3034414545454231373030303030": "image7"
-    ]
+    @State private var imageNames: [String] = []
+    @State private var showResultView = false
+
+    func sendStop() {
+        let data = Data(hex: "73746F70")
+        bluetoothManager.sendData(data)
+    }
+
+    func sendStart() {
+        let data = Data(hex: "7374617274")
+        bluetoothManager.sendData(data)
+    }
+
+    func sendComplete() {
+        let data = Data(hex: "636F6D706C65746564")
+        bluetoothManager.sendData(data)
+    }
 
     var body: some View {
         VStack {
+            Spacer()
+
             ScrollView {
                 LazyVStack {
-                    ForEach(bluetoothManager.receivedData, id: \.self) { data in
-                        if let imageName = imageMapping[data] {
-                            Image(imageName)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                        }
+                    ForEach(imageNames, id: \.self) { imageName in
+                        Image(imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: UIScreen.main.bounds.width / 5, maxHeight: UIScreen.main.bounds.height / 5)
+                            .padding()
                     }
                 }
             }
 
-            Button(action: {
-                isResultViewPresented = true
-            }) {
-                Text("Done")
-                    .font(.title)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            Spacer()
+
+            HStack {
+                Button(action: sendStart) {
+                    Text("Start")
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
+
+                NavigationLink(destination: ResultView(bluetoothManager: bluetoothManager), isActive: $showResultView) {
+                    Button(action: {
+                        sendStop()
+                        showResultView = true
+                    }) {
+                        Text("Stop")
+                            .padding()
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
+                .padding()
+
+                Button(action: sendComplete) {
+                    Text("Completed")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
             }
-            .disabled(bluetoothManager.receivedData.count <= 1)
-            .sheet(isPresented: $isResultViewPresented) {
-                ResultView(bluetoothManager: bluetoothManager)
-            }
+            .padding(.bottom)
         }
+        .onReceive(bluetoothManager.$receivedData, perform: { data in
+            var imageName: String?
+
+            switch data {
+            case "45303034303130383331464342333634":
+                imageName = "绿色大三角"
+            case "45303034303130383331464338333242":
+                imageName = "红色大三角"
+            case "45303034303130383331464337453842":
+                imageName = "白色正方形"
+            case "45303034303130383331464338393338":
+                imageName = "蓝色四边形"
+            case "45303034303130383331464338463742":
+                imageName = "粉色中三角"
+            case "45303034303130383331464339354142":
+                imageName = "橙色小三角"
+            case "45303034303130383331464339414439":
+                imageName = "黄色小三角"
+            default:
+                break
+            }
+
+            if let imageName = imageName {
+                imageNames.append(imageName)
+            }
+        })
     }
 }
 
@@ -55,3 +109,4 @@ struct BoardView_Previews: PreviewProvider {
         BoardView(bluetoothManager: BluetoothManager())
     }
 }
+
