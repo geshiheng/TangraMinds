@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E2297843-FAAD-4DD5-BEC4-9CB4AF14C9A3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55D706BA-BAB5-4C07-9EC6-9AD76396F068"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TangraMinds/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "55D706BA-BAB5-4C07-9EC6-9AD76396F068 - d658e918e3a2d43f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TangraMinds.BluetoothManager.__allocating_init() -&gt; TangraMinds.BluetoothManager"
+                  moduleName = "TangraMinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apaipaio/Desktop/TangraMinds/TangraMinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "55D706BA-BAB5-4C07-9EC6-9AD76396F068 - 68940e4bbdca0ed0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TangraMinds.BluetoothManager.init() -&gt; TangraMinds.BluetoothManager"
+                  moduleName = "TangraMinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apaipaio/Desktop/TangraMinds/TangraMinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "265"
+                  endingLineNumber = "265"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  uuid = "55D706BA-BAB5-4C07-9EC6-9AD76396F068 - b9dc5328df51bfb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TangraMinds.BluetoothManager.__deallocating_deinit"
+                  moduleName = "TangraMinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apaipaio/Desktop/TangraMinds/TangraMinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93AB7CCF-49BC-4F75-A724-221DF1871B13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TangraMinds/DatabaseManagerWrapper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "930E4D07-4F58-4A15-B434-E4F5BA1DF18F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TangraMinds/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "centralManagerDidUpdateState(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "930E4D07-4F58-4A15-B434-E4F5BA1DF18F - b3ba8be759e50653"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TangraMinds.BluetoothManager.centralManager(_: __C.CBCentralManager, didDiscover: __C.CBPeripheral, advertisementData: Swift.Dictionary&lt;Swift.String, Any&gt;, rssi: __C.NSNumber) -&gt; ()"
+                  moduleName = "TangraMinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apaipaio/Desktop/TangraMinds/TangraMinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "286"
+                  endingLineNumber = "286"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "930E4D07-4F58-4A15-B434-E4F5BA1DF18F - 1c84c589c0b54cdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TangraMinds.BluetoothManager.centralManagerDidUpdateState(__C.CBCentralManager) -&gt; ()"
+                  moduleName = "TangraMinds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apaipaio/Desktop/TangraMinds/TangraMinds/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "284"
+                  endingLineNumber = "284"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

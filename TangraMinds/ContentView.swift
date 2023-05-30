@@ -20,25 +20,29 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                Button(action: {
-                    isCameraViewPresented = true
-                }) {
-                    Text("Detect")
-                        .font(.title)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .sheet(isPresented: $isCameraViewPresented) {
-                    CameraView()
-                }
-
+//                Button(action: {
+//                    isCameraViewPresented = true
+//                }) {
+//                    Text("Detect")
+//                        .font(.title)
+//                        .padding()
+//                        .background(Color.blue)
+//                        .foregroundColor(.white)
+//                        .cornerRadius(10)
+//                }
+//                .sheet(isPresented: $isCameraViewPresented) {
+//                    CameraView()
+//                }
+                Text("TangraMinds")
+                    .font(.system(size: 40))
+                    .padding()
+                    .foregroundColor(.black)
+                
                 Button(action: {
                     bluetoothManager.initializeCentralManager()
                     isBluetoothDevicesViewPresented = true
                 }) {
-                    Text("Open Bluetooth")
+                    Text("Bluetooth")
                         .font(.title)
                         .padding()
                         .background(Color.blue)

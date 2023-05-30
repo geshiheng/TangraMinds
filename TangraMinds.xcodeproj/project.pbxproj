@@ -28,6 +28,7 @@
 		67D9973529FFC33B00B36086 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973429FFC33B00B36086 /* BoardView.swift */; };
 		67D9973729FFC73100B36086 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973629FFC73100B36086 /* GalleryView.swift */; };
 		67D9973929FFCA1300B36086 /* PhotoLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */; };
+		67DDD7182A28C628001A174E /* FunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DDD7172A28C628001A174E /* FunctionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		67D9973429FFC33B00B36086 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		67D9973629FFC73100B36086 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryView.swift; sourceTree = "<group>"; };
+		67DDD7172A28C628001A174E /* FunctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,6 @@
 		6788097429EB7CD90035FF9D /* TangraMinds */ = {
 			isa = PBXGroup;
 			children = (
-				6762F4FC2A07EDF10029BFA6 /* Info.plist */,
 				6788097529EB7CD90035FF9D /* TangraMindsApp.swift */,
 				6788097729EB7CD90035FF9D /* ContentView.swift */,
 				6788099F29EB81370035FF9D /* CameraView.swift */,
@@ -132,14 +133,14 @@
 				67D9973429FFC33B00B36086 /* BoardView.swift */,
 				67D9973629FFC73100B36086 /* GalleryView.swift */,
 				67D9973829FFCA1300B36086 /* PhotoLibraryView.swift */,
-				678809A529ECB3DA0035FF9D /* Toast.swift */,
-				6762F4F12A0727C10029BFA6 /* Extensions.swift */,
-				6762F4F62A07CC540029BFA6 /* DatabaseManager.swift */,
 				6762F4F82A07D1050029BFA6 /* PhotoLibraryViewModel.swift */,
-				6762F4FA2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift */,
 				6762F5112A0971190029BFA6 /* Tangram.mlpackage */,
 				6762F4FD2A09220D0029BFA6 /* TangramClassifier.swift */,
 				6788097929EB7CDA0035FF9D /* Assets.xcassets */,
+				67DDD71B2A28C86A001A174E /* Database */,
+				67DDD71A2A28C822001A174E /* Basicfeatures */,
+				67DDD7192A28C7BC001A174E /* NewFunctions */,
+				6762F4FC2A07EDF10029BFA6 /* Info.plist */,
 				6788097B29EB7CDA0035FF9D /* Preview Content */,
 			);
 			path = TangraMinds;
@@ -168,6 +169,32 @@
 				6788099229EB7CDA0035FF9D /* TangraMindsUITestsLaunchTests.swift */,
 			);
 			path = TangraMindsUITests;
+			sourceTree = "<group>";
+		};
+		67DDD7192A28C7BC001A174E /* NewFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				67DDD7172A28C628001A174E /* FunctionView.swift */,
+			);
+			path = NewFunctions;
+			sourceTree = "<group>";
+		};
+		67DDD71A2A28C822001A174E /* Basicfeatures */ = {
+			isa = PBXGroup;
+			children = (
+				6762F4F12A0727C10029BFA6 /* Extensions.swift */,
+				678809A529ECB3DA0035FF9D /* Toast.swift */,
+			);
+			path = Basicfeatures;
+			sourceTree = "<group>";
+		};
+		67DDD71B2A28C86A001A174E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				6762F4FA2A07D35F0029BFA6 /* DatabaseManagerWrapper.swift */,
+				6762F4F62A07CC540029BFA6 /* DatabaseManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +347,7 @@
 				6762F4FE2A09220D0029BFA6 /* TangramClassifier.swift in Sources */,
 				6788097629EB7CD90035FF9D /* TangraMindsApp.swift in Sources */,
 				6762F5122A0971190029BFA6 /* Tangram.mlpackage in Sources */,
+				67DDD7182A28C628001A174E /* FunctionView.swift in Sources */,
 				67D9973729FFC73100B36086 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
